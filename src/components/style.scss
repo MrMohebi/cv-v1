@@ -1,0 +1,123 @@
+.brief-story{
+  display: flex;
+  flex-direction: column;
+  background: #20202a;
+  width: 270px;
+  height: inherit;
+
+  .bs-title{
+    z-index:2;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: inherit;
+    height: 230px;
+    opacity: 0.95;
+    background: #252530;
+
+    .name{
+      font-size:0.95em;
+      color: #fff;
+    }
+    .skills{
+      font-size:0.9em;
+      color: #7e7e81;
+    }
+
+  }
+
+  .bs-info{
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: inherit;
+    height: 100vh;
+    .title{
+      margin: 0 0 0 30px;
+      color: #fff;
+      font-size: 0.95em;
+      font-weight: bold;
+    }
+    .key-val-container{
+      display: flex;
+      justify-content: space-between;
+      width: inherit;
+      padding: 5px 30px;
+      margin-top: 5px;
+    }
+    .key{
+      color: #fff;
+      font-size: 0.87em;
+    }
+    .val{
+      color: #7e7e81;
+      font-size: 0.85em;
+    }
+
+    .knowledge-icon{
+      font-size: 13px;
+      color: #ffc107;
+    }
+
+    .mlr-list{
+      margin: 5px 30px;
+    }
+
+    .react-sweet-progress-line-inner, .react-sweet-progress-line{
+      min-height: 6px;
+      height: 6px;
+    }
+
+  }
+
+  .bs-social-network{
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: inherit;
+    height: 50px;
+    opacity: 0.95;
+    background: #252530;
+  }
+
+  #badgeStatic {
+    .MuiBadge-colorSecondary{
+      background: #ffc107;
+    }
+    .MuiBadge-badge{
+      min-width: 10px;
+      height: 10px;
+    }
+  }
+
+  #badgeAnimate{
+    .MuiBadge-colorSecondary{
+      background: #e5e1d3;
+    }
+    .MuiBadge-badge{
+      animation: badgeResize 1s ease infinite;
+    }
+  }
+
+}
+
+
+@keyframes badgeResize {
+  0%{
+    min-width: 10px;
+    height: 10px;
+    opacity: 1;
+  }90%{
+     min-width: 20px;
+     height: 20px;
+     opacity: 0.1;
+   }100%{
+      opacity: 0;
+    }
+}
