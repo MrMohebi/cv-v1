@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import {Menu} from "@material-ui/icons";
-
+import {useSwipeable} from "react-swipeable";
 
 // plugin
 import { gsap } from "gsap";
@@ -36,9 +36,14 @@ const IndexPage = () => {
         }
     }
 
+    const handlers = useSwipeable({
+        onSwipedLeft: closeBriefStory,
+        onSwipedRight: openBriefStory,
+    });
+
     return (
     <main className={"d-flex align-items-center justify-content-center"}>
-        <div className={"main-container"}>
+        <div {...handlers} className={"main-container"}>
             <div onClick={openBriefStory} className={"menu-icon d-flex justify-content-center align-items-center" + menuIconClass}>
                 <Menu/>
             </div>

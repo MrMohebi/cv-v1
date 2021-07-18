@@ -33,6 +33,7 @@
     "react-helmet": "^6.1.0",
     "react-move": "^6.4.0",
     "react-sweet-progress": "^1.1.2",
+    "react-swipeable": "^6.1.2",
     "react-switch": "^6.0.0",
     "sass": "^1.34.1",
     "use-is-in-viewport": "^1.0.9"

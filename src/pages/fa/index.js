@@ -14,6 +14,7 @@ import 'react-circular-progressbar/dist/styles.css';
 //components
 import {BriefStoryFA} from "../../components/LangFa/BriefStrory_FA/BriefStoryFA";
 import MainFA from "../../components/LangFa/Main_FA/MainFA";
+import {useSwipeable} from "react-swipeable";
 
 const IndexPage = () => {
     gsap.registerPlugin(ScrollTrigger);
@@ -40,10 +41,13 @@ const IndexPage = () => {
             setMenuIconClass("")
         }
     }
-
+    const handlers = useSwipeable({
+        onSwipedLeft: openBriefStory,
+        onSwipedRight: closeBriefStory,
+    });
     return (
         <main className={"d-flex align-items-center justify-content-center"}>
-            <div className={"main-container"}>
+            <div {...handlers} className={"main-container"}>
                 <div onClick={openBriefStory} className={"menu-icon d-flex justify-content-center align-items-center" + menuIconClass}>
                     <Menu/>
                 </div>
