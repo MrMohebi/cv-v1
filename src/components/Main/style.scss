@@ -1,0 +1,83 @@
+.main{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  overflow: scroll;
+  background: #1e1e28;
+  width: 100%;
+
+  .back-img{
+    overflow-y: hidden;
+    position: fixed;
+    width: inherit;
+    height: 400px;
+    background-size: cover;
+    background: url("../../images/header.jpg") no-repeat 70% 75%;
+    opacity: 0.1;
+  }
+
+  .main-banner{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(2, 1fr);
+    position: relative;
+    z-index: 1;
+    margin: 50px 0 20px 0;
+    width: 90%;
+    height: 300px;
+    opacity: 0.7;
+
+    img{
+      width: 100%;
+      height: inherit;
+      grid-column: 1;
+      grid-row-start: 1;
+      grid-row-end: 2;
+    }
+
+
+    .banner-title{
+      z-index: 10;
+      margin:50px;
+      grid-column: 1;
+      grid-row: 1;
+      color: white;
+      white-space: pre-line;
+    }
+  }
+
+  .statistics{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    span{
+      color: white;
+      font-size: 0.9em;
+
+    }
+
+    .statNumbers{
+      color: #FFC107FF;
+      font-size: 1.3em;
+      font-weight: bold;
+    }
+
+  }
+
+  .card{
+    background-color: #2c2c38;
+    width: 30%;
+    height: 240px;
+    padding: 10px;
+    p{
+      font-size: 1em;
+      color:#7e7e81;
+      white-space: pre-line;
+    }
+  }
+
+
+
+}
