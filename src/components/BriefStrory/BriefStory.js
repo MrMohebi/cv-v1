@@ -1,12 +1,12 @@
-import React, {useState} from "react";
+import React from "react";
 import {Badge, Tooltip} from "@material-ui/core";
 import {StaticImage} from "gatsby-plugin-image";
-import AnimatedProgressProvider from "../providers/AnimatedProgressProvider";
+import AnimatedProgressProvider from "../../providers/AnimatedProgressProvider";
 import {easeQuadInOut} from "d3-ease";
 import {CircularProgressbar} from "react-circular-progressbar";
 import {BlurOn, GitHub, Telegram} from "@material-ui/icons";
-import {AnimatedNumber} from "../providers/AnimatedNumber";
-import {AnimatedLinePBar} from "../providers/AnimatedLinePBar";
+import {AnimatedNumber} from "../../providers/AnimatedNumber";
+import {AnimatedLinePBar} from "../../providers/AnimatedLinePBar";
 
 // css
 import "./style.css"
