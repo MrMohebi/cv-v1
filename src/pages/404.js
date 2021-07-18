@@ -1,52 +1,21 @@
 import * as React from "react"
 import { Link } from "gatsby"
 
-// styles
-const pageStyles = {
-  color: "#232129",
-  padding: "96px",
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
+import 'bootstrap/dist/css/bootstrap.css'
+import {Helmet} from "react-helmet";
 
-const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
-
-// markup
 const NotFoundPage = () => {
   return (
-    <main style={pageStyles}>
-      <title>Not found</title>
-      <h1 style={headingStyles}>Page not found</h1>
-      <p style={paragraphStyles}>
-        Sorry{" "}
-        <span role="img" aria-label="Pensive emoji">
-          😔
-        </span>{" "}
-        we couldn’t find what you were looking for.
-        <br />
-        {process.env.NODE_ENV === "development" ? (
-          <>
-            <br />
-            Try creating a page in <code style={codeStyles}>src/pages/</code>.
-            <br />
-          </>
-        ) : null}
-        <br />
-        <Link to="/">Go home</Link>.
-      </p>
+    <main>
+        <Helmet>
+            <meta charSet="utf-8" />
+            <title>404</title>
+        </Helmet>
+        <div className={"d-flex flex-column align-items-center  justify-content-center vw-100 vh-100"}>
+            <h1 className={"pb-4"}> You are curious, I like u <br/>But theres isn't anything else ;)</h1>
+            <br/><br/><br/>
+            <h5 className={"mb-4"}><Link  to={"/"}>Main Page</Link></h5>
+        </div>
     </main>
   )
 }
