@@ -23,7 +23,7 @@
     grid-template-rows: repeat(2, 1fr);
     position: relative;
     z-index: 1;
-    margin: 50px 0 20px 0;
+    margin: 10px 0 20px 0;
     width: 90%;
     height: 300px;
     opacity: 0.7;
@@ -85,6 +85,11 @@
   transform: translateX(275px);
 }
 
+.change-lang-container{
+  margin: 20px 20px 0 0;
+  align-self: flex-end;
+  z-index: 5;
+}
 
 @media screen and (min-width: 1090px) {
   .card {

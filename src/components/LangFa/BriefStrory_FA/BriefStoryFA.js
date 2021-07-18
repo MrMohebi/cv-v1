@@ -30,7 +30,7 @@ export const BriefStoryFA = (props) =>{
                 <div style={{margin: "0 0 190px 0"}}/>
 
                 <div className={"key-val-container"}>
-                    <span className={"key"}>کشور: </span><span className={"val"}>ایرانی</span>
+                    <span className={"key"}>کشور: </span><span className={"val"}>ایران</span>
                 </div>
                 <div className={"key-val-container"}>
                     <span className={"key"}>شهر: </span><span className={"val"}>کرمان</span>
@@ -72,7 +72,7 @@ export const BriefStoryFA = (props) =>{
                 <hr style={{width:"70%", border: "1px solid rgb(126 126 129)", margin:"20px 0", borderRadius:"5px", zIndex:4 }} />
 
                 <div style={{width:"inherit"}}>
-                    <span className={"title"} >دانش</span>
+                    <span className={"title"} >تجارب</span>
                     <li className={"key mlr-list"}><BlurOn className={"knowledge-icon"}/>  Laravel, Symfony, Django</li>
                     <li className={"key mlr-list"}><BlurOn className={"knowledge-icon"}/>  Nginx, Apache</li>
                     <li className={"key mlr-list"}><BlurOn className={"knowledge-icon"}/>  Mysql, Mongodb</li>
@@ -95,10 +95,10 @@ export const BriefStoryFA = (props) =>{
                     <span className={"title"} >زبان های برنامه نویسی</span>
                     <div className={"key-val-container"} style={{paddingBottom: "2px"}}>
                         <span className={"key"}>PHP</span>
-                        <span className={"val"}><AnimatedNumber start={0} end={90} duration={2000} />%</span>
+                        <span className={"val"}><AnimatedNumber start={0} end={95} duration={2000} />%</span>
                     </div>
                     <div style={{margin:"5px 30px"}}>
-                        <AnimatedLinePBar percent={90} width={"210px"} color={"#FFC107FF"} trailColor={'#181616FF'} />
+                        <AnimatedLinePBar percent={95} width={"210px"} color={"#FFC107FF"} trailColor={'#181616FF'} />
                     </div>
                     <div className={"key-val-container"} style={{paddingBottom: "2px"}}>
                         <span className={"key"}>JS</span>
@@ -116,17 +116,17 @@ export const BriefStoryFA = (props) =>{
                     </div>
                     <div className={"key-val-container"} style={{paddingBottom: "2px"}}>
                         <span className={"key"}>HTML</span>
-                        <span className={"val"}><AnimatedNumber start={0} end={80} duration={2000} />%</span>
+                        <span className={"val"}><AnimatedNumber start={0} end={85} duration={2000} />%</span>
                     </div>
                     <div style={{margin:"5px 30px"}}>
-                        <AnimatedLinePBar percent={80} width={"210px"} color={"#FFC107FF"} trailColor={'#181616FF'} />
+                        <AnimatedLinePBar percent={85} width={"210px"} color={"#FFC107FF"} trailColor={'#181616FF'} />
                     </div>
                     <div className={"key-val-container"} style={{paddingBottom: "2px"}}>
                         <span className={"key"}>CSS</span>
-                        <span className={"val"}><AnimatedNumber start={0} end={60} duration={2000} />%</span>
+                        <span className={"val"}><AnimatedNumber start={0} end={70} duration={2000} />%</span>
                     </div>
                     <div style={{margin:"5px 30px"}}>
-                        <AnimatedLinePBar percent={60} width={"210px"} color={"#FFC107FF"} trailColor={'#181616FF'} />
+                        <AnimatedLinePBar percent={70} width={"210px"} color={"#FFC107FF"} trailColor={'#181616FF'} />
                     </div>
                     <div className={"key-val-container"} style={{paddingBottom: "2px"}}>
                         <span className={"key"}>C#</span>
@@ -142,18 +142,7 @@ export const BriefStoryFA = (props) =>{
                     <div style={{margin:"5px 30px"}}>
                         <AnimatedLinePBar percent={80} width={"210px"} color={"#FFC107FF"} trailColor={'#181616FF'} />
                     </div>
-                    <div className={"key-val-container"} style={{paddingBottom: "2px"}}>
-                        <span className={"key"}>Pine Script</span>
-                        <span className={"val"}><AnimatedNumber start={0} end={50} duration={2000} />%</span>
-                    </div>
-                    <div style={{margin:"5px 30px"}}>
-                        <AnimatedLinePBar percent={50} width={"210px"} color={"#FFC107FF"} trailColor={'#181616FF'} />
-                    </div>
                 </div>
-
-
-
-
                 <div style={{margin: "0 0 50px 0"}}/>
             </div>
             <div className={"bs-social-network"}>

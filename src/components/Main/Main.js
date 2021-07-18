@@ -7,6 +7,7 @@ import headerImg4 from "../../images/header-parts/42.png";
 import {AnimatedNumber} from "../../providers/AnimatedNumber";
 
 import "./style.css"
+import ChangeLangSwitch from "../ChangeLangSwitch";
 
 const Main = (props) => {
     // let parallaxHeader =(e)=>{
@@ -18,6 +19,9 @@ const Main = (props) => {
 
     return (
         <div onClick={props.tapExitBSFunc} className={"main" + props.mainOpenBSClass} >
+            <div className={"change-lang-container"} >
+                <ChangeLangSwitch/>
+            </div>
             <div className="back-img"/>
             <div className="main-banner">
                 <img style={{ zIndex:12}} id={"header-img1"} src={headerImg1} alt="header"/>
@@ -31,7 +35,7 @@ const Main = (props) => {
                 <div><span className={"statNumbers"}><AnimatedNumber style={{color:"white"}} start={0} end={15} duration={3000}/>   </span><span>{"\nComplected Projects"}</span></div>
                 <div><span className={"statNumbers"}><AnimatedNumber style={{color:"white"}} start={0} end={10} duration={3000}/>+ </span><span>{"\nHappy Customers"}</span></div>
             </div>
-            <h6 style={{margin:"30px 0 0 30px"}} className={"align-self-start p-2"} >My Services:</h6>
+            <h6 style={{margin:"30px 30px 0 30px"}} className={"align-self-start p-2"} >My Services:</h6>
             <div style={{width: "90%", padding:"10px 0 30px 0"}} className={"d-flex flex-wrap justify-content-around align-content-around"} >
                 <div className="card">
                     <div className="card-body">

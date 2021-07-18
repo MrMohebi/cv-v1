@@ -38,7 +38,6 @@ const IndexPage = () => {
 
     return (
     <main className={"d-flex align-items-center justify-content-center"}>
-        {/*<button onClick={()=>{lang === langEn? setLang(langFa) : setLang(langEn)}}>lang</button>*/}
         <div className={"main-container"}>
             <div onClick={openBriefStory} className={"menu-icon d-flex justify-content-center align-items-center" + menuIconClass}>
                 <Menu/>
