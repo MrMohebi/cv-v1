@@ -5,6 +5,7 @@ import {Menu} from "@material-ui/icons";
 // plugin
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import {Helmet} from "react-helmet";
 
 // css
 import 'bootstrap/dist/css/bootstrap.css'
@@ -47,6 +48,9 @@ const IndexPage = () => {
     });
     return (
         <main className={"d-flex align-items-center justify-content-center"}>
+            <Helmet>
+                <title>MMMohebi CV</title>
+            </Helmet>
             <div {...handlers} className={"main-container"}>
                 <div onClick={openBriefStory} className={"menu-icon d-flex justify-content-center align-items-center" + menuIconClass}>
                     <Menu/>
