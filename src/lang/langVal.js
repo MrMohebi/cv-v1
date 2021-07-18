@@ -24,7 +24,7 @@ export const langEn = {
         yearsOfExperience:"\nYears Of Experience",
         completedProjects:"\nComplected Projects",
         happyCustomers:"\nHappy Customers",
-        myServices:"My Services:",
+        myServices:"My Services",
         card1:{
             title:"Web Development",
             body:"Create web sites and web applications for your online shops, work or personal introducing and etc... \n Every thing you can imagine :)",
@@ -58,7 +58,7 @@ export const langEn = {
     }
 }
 export const langFa ={
-    lang:"fa",
+    lang:"LangFa",
     briefStory: {
         name:"محمد مهدی محبی",
         skills:"توسعه دهنده",
@@ -78,11 +78,11 @@ export const langFa ={
         knowledge:"دانش",
     },
     main: {
-        bannerTitle:"سلام من محبی ام،\n یه توسعه دهنده وب :)",
+        bannerTitle:"سلام محبی هستم،\n توسعه دهنده وب :)",
         bannerBtn:"باهم ببینیم",
-        yearsOfExperience:"سال تجربه\n",
-        completedProjects:"پروژه های انجام شده\n",
-        happyCustomers:"مشتری های راضیی\n",
+        yearsOfExperience:"\nسال تجربه\n",
+        completedProjects:"\nپروژه های انجام شده\n",
+        happyCustomers:"\nمشتری های راضیی\n",
         myServices:"خدمات قابل ارائه:",
         card1:{
             title:"توسعه دهنده وب",
@@ -110,7 +110,7 @@ export const langFa ={
             link:"",
         },
         card6:{
-            title:"رمزارز ها",
+            title:"رمز ارز ها",
             body:"برنامه نویسی اسمارت کانترکت بر بستر بلاکچین، به عبارتی بهتر برنامه ها و سیستم های غیر متمرکز",
             link:"",
         },

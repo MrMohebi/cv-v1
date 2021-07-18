@@ -1,4 +1,4 @@
-.brief-story{
+.brief-story_FA{
   display: flex;
   flex-direction: column;
   background: #20202a;
@@ -129,9 +129,9 @@
 
 
 @media only screen and (max-width: 600px) {
-  .brief-story {
+  .brief-story_FA {
     position: absolute;
-    transform: translateX(-270px);
+    transform: translateX(+270px);
     opacity: 0;
     transition: width 1.5s ease, opacity 2s ease, transform 2s ease;
   }

@@ -1,5 +1,4 @@
 import React, {useState} from "react";
-import {langFa, langEn} from "../lang/langVal";
 import {Menu} from "@material-ui/icons";
 
 
@@ -18,7 +17,6 @@ import Main from "../components/Main/Main";
 
 const IndexPage = () => {
     gsap.registerPlugin(ScrollTrigger);
-    let [lang, setLang] = useState(langEn);
     let [bSOpenClass, setBSOpenClass] = useState("");
     let [mainOpenBSClass, setMainOpenBSClass] = useState("");
     let [menuIconClass, setMenuIconClass] = useState("");
@@ -45,8 +43,8 @@ const IndexPage = () => {
             <div onClick={openBriefStory} className={"menu-icon d-flex justify-content-center align-items-center" + menuIconClass}>
                 <Menu/>
             </div>
-            <BriefStory lang={lang} bSOpenClass={bSOpenClass} tapExitBSFunc={closeBriefStory}/>
-            <Main lang={lang} mainOpenBSClass={mainOpenBSClass} tapExitBSFunc={closeBriefStory}/>
+            <BriefStory bSOpenClass={bSOpenClass} tapExitBSFunc={closeBriefStory}/>
+            <Main mainOpenBSClass={mainOpenBSClass} tapExitBSFunc={closeBriefStory}/>
             {/*<div className={"sidebar"}></div>*/}
         </div>
     </main>

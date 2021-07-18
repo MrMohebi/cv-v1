@@ -1,54 +1,54 @@
 import React from "react";
 import {Badge, Tooltip} from "@material-ui/core";
 import {StaticImage} from "gatsby-plugin-image";
-import AnimatedProgressProvider from "../../providers/AnimatedProgressProvider";
+import AnimatedProgressProvider from "../../../providers/AnimatedProgressProvider";
 import {easeQuadInOut} from "d3-ease";
 import {CircularProgressbar} from "react-circular-progressbar";
 import {BlurOn, GitHub, Telegram} from "@material-ui/icons";
-import {AnimatedNumber} from "../../providers/AnimatedNumber";
-import {AnimatedLinePBar} from "../../providers/AnimatedLinePBar";
+import {AnimatedNumber} from "../../../providers/AnimatedNumber";
+import {AnimatedLinePBar} from "../../../providers/AnimatedLinePBar";
 
 // css
 import "./style.css"
 import 'react-circular-progressbar/dist/styles.css';
 
-export const BriefStory = (props) =>{
+export const BriefStoryFA = (props) =>{
     return(
-        <div className={props.bSOpenClass + "brief-story "} >
+        <div className={props.bSOpenClass + "brief-story_FA"} >
             <div onClick={props.tapExitBSFunc} className={"bs-title"}>
-                <Tooltip title="Im available :)" placement="right-end" arrow>
-                    <Badge id="badgeStatic" anchorOrigin={{vertical: 'bottom', horizontal: 'right',}} overlap="circle" badgeContent=" " color="secondary">
-                        <Badge id="badgeAnimate"  anchorOrigin={{vertical: 'bottom', horizontal: 'right',}} overlap="circle" badgeContent=" " color="secondary">
-                            <StaticImage className={"mt-4"} src="../../images/brief-story.jpg" alt="its Me:)" imgStyle={{clipPath:"circle(45px at center)"}} width={90} height={90} quality={100}/>
+                <Tooltip title="در دسترس" placement="left-end" arrow>
+                    <Badge id="badgeStatic" anchorOrigin={{vertical: 'bottom', horizontal: 'left',}} overlap="circle" badgeContent=" " color="secondary">
+                        <Badge id="badgeAnimate"  anchorOrigin={{vertical: 'bottom', horizontal: 'left',}} overlap="circle" badgeContent=" " color="secondary">
+                            <StaticImage className={"mt-4"} src="../../../images/brief-story.jpg" alt="its Me:)" imgStyle={{clipPath:"circle(45px at center)"}} width={90} height={90} quality={100}/>
                         </Badge>
                     </Badge>
                 </Tooltip>
-                <span className={"m-2 name"}>MMMohebi</span>
-                <span className={"skills"} >Developer</span>
+                <span className={"m-2 name"}>محمد مهدی محبی</span>
+                <span className={"skills"} >توسعه دهنده</span>
             </div>
             <div className={"bs-info"}>
                 <div style={{margin: "0 0 190px 0"}}/>
 
                 <div className={"key-val-container"}>
-                    <span className={"key"}>Residence: </span><span className={"val"}>Iran</span>
+                    <span className={"key"}>کشور: </span><span className={"val"}>ایرانی</span>
                 </div>
                 <div className={"key-val-container"}>
-                    <span className={"key"}>City: </span><span className={"val"}>Kerman</span>
+                    <span className={"key"}>شهر: </span><span className={"val"}>کرمان</span>
                 </div>
                 <div className={"key-val-container"}>
-                    <span className={"key"}>Age:</span><span className={"val"}>21</span>
+                    <span className={"key"}>سن:</span><span className={"val"}>21</span>
                 </div>
                 <div className={"key-val-container"}>
-                    <span className={"key"}>Phone:</span><span className={"val"}>(+98)9221321311</span>
+                    <span className={"key"}>شماره همراه:</span><span className={"val"}>9221321311(98+)</span>
                 </div>
                 <div className={"key-val-container"}>
-                    <span className={"key"}>Email:</span><span className={"val"}>MMMohebi@outlook.com</span>
+                    <span className={"key"}>ایمیل:</span><span className={"val"}>MMMohebi@outlook.com</span>
                 </div>
 
                 <hr style={{width:"70%", border: "1px solid rgb(126 126 129)", margin:"20px 0", borderRadius:"5px", zIndex:4 }} />
 
                 <div style={{width:"inherit"}}>
-                    <span className={"title"} >Languages</span>
+                    <span className={"title"} >زبان ها</span>
                     <div className={"d-flex justify-content-around"}>
                         <AnimatedProgressProvider valueStart={0} valueEnd={100} duration={3} easingFunction={easeQuadInOut}>
                             {value => {
@@ -64,15 +64,15 @@ export const BriefStory = (props) =>{
                         </AnimatedProgressProvider>
                     </div>
                     <div className={"d-flex justify-content-around"}>
-                        <span className={"key"} style={{margin:"0 20px"}} >Persian</span>
-                        <span className={"key"} style={{margin:"0 20px"}} >English</span>
+                        <span className={"key"} style={{margin:"0 20px"}} >فارسی</span>
+                        <span className={"key"} style={{margin:"0 20px"}} >انگلیسی</span>
                     </div>
                 </div>
 
                 <hr style={{width:"70%", border: "1px solid rgb(126 126 129)", margin:"20px 0", borderRadius:"5px", zIndex:4 }} />
 
                 <div style={{width:"inherit"}}>
-                    <span className={"title"} >Knowledge</span>
+                    <span className={"title"} >دانش</span>
                     <li className={"key mlr-list"}><BlurOn className={"knowledge-icon"}/>  Laravel, Symfony, Django</li>
                     <li className={"key mlr-list"}><BlurOn className={"knowledge-icon"}/>  Nginx, Apache</li>
                     <li className={"key mlr-list"}><BlurOn className={"knowledge-icon"}/>  Mysql, Mongodb</li>
@@ -92,7 +92,7 @@ export const BriefStory = (props) =>{
                 <hr style={{width:"70%", border: "1px solid rgb(126 126 129)", margin:"20px 0", borderRadius:"5px", zIndex:4 }} />
 
                 <div style={{width:"inherit"}}>
-                    <span className={"title"} >Coding</span>
+                    <span className={"title"} >زبان های برنامه نویسی</span>
                     <div className={"key-val-container"} style={{paddingBottom: "2px"}}>
                         <span className={"key"}>PHP</span>
                         <span className={"val"}><AnimatedNumber start={0} end={90} duration={2000} />%</span>

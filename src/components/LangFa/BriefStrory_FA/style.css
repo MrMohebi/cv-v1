@@ -1,11 +1,11 @@
-.brief-story {
+.brief-story_FA {
   display: flex;
   flex-direction: column;
   background: #20202a;
   width: 270px;
   height: inherit;
 }
-.brief-story .bs-title {
+.brief-story_FA .bs-title {
   z-index: 2;
   position: fixed;
   display: flex;
@@ -17,15 +17,15 @@
   opacity: 0.95;
   background: #252530;
 }
-.brief-story .bs-title .name {
+.brief-story_FA .bs-title .name {
   font-size: 0.95em;
   color: #fff;
 }
-.brief-story .bs-title .skills {
+.brief-story_FA .bs-title .skills {
   font-size: 0.9em;
   color: #7e7e81;
 }
-.brief-story .bs-info {
+.brief-story_FA .bs-info {
   overflow: scroll;
   display: flex;
   flex-direction: column;
@@ -34,39 +34,39 @@
   width: inherit;
   height: 100vh;
 }
-.brief-story .bs-info .title {
+.brief-story_FA .bs-info .title {
   margin: 0 30px 0 30px;
   color: #fff;
   font-size: 0.95em;
   font-weight: bold;
 }
-.brief-story .bs-info .key-val-container {
+.brief-story_FA .bs-info .key-val-container {
   display: flex;
   justify-content: space-between;
   width: inherit;
   padding: 5px 30px;
   margin-top: 5px;
 }
-.brief-story .bs-info .key {
+.brief-story_FA .bs-info .key {
   color: #fff;
   font-size: 0.87em;
 }
-.brief-story .bs-info .val {
+.brief-story_FA .bs-info .val {
   color: #7e7e81;
   font-size: 0.85em;
 }
-.brief-story .bs-info .knowledge-icon {
+.brief-story_FA .bs-info .knowledge-icon {
   font-size: 13px;
   color: #ffc107;
 }
-.brief-story .bs-info .mlr-list {
+.brief-story_FA .bs-info .mlr-list {
   margin: 5px 30px;
 }
-.brief-story .bs-info .react-sweet-progress-line-inner, .brief-story .bs-info .react-sweet-progress-line {
+.brief-story_FA .bs-info .react-sweet-progress-line-inner, .brief-story_FA .bs-info .react-sweet-progress-line {
   min-height: 6px;
   height: 6px;
 }
-.brief-story .bs-social-network {
+.brief-story_FA .bs-social-network {
   z-index: 2;
   display: flex;
   flex-direction: row;
@@ -77,17 +77,17 @@
   opacity: 0.95;
   background: #252530;
 }
-.brief-story #badgeStatic .MuiBadge-colorSecondary {
+.brief-story_FA #badgeStatic .MuiBadge-colorSecondary {
   background: #ffc107;
 }
-.brief-story #badgeStatic .MuiBadge-badge {
+.brief-story_FA #badgeStatic .MuiBadge-badge {
   min-width: 10px;
   height: 10px;
 }
-.brief-story #badgeAnimate .MuiBadge-colorSecondary {
+.brief-story_FA #badgeAnimate .MuiBadge-colorSecondary {
   background: #e5e1d3;
 }
-.brief-story #badgeAnimate .MuiBadge-badge {
+.brief-story_FA #badgeAnimate .MuiBadge-badge {
   animation: badgeResize 1s ease infinite;
 }
 
@@ -113,9 +113,9 @@
   }
 }
 @media only screen and (max-width: 600px) {
-  .brief-story {
+  .brief-story_FA {
     position: absolute;
-    transform: translateX(-270px);
+    transform: translateX(270px);
     opacity: 0;
     transition: width 1.5s ease, opacity 2s ease, transform 2s ease;
   }
