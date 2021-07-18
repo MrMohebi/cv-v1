@@ -19,7 +19,7 @@ const Main = (props) => {
     }
 
     return (
-        <div  className={"main"} >
+        <div onClick={props.tapExitBSFunc} className={"main" + props.mainOpenBSClass} >
             <div className="back-img"/>
             <div className="main-banner">
                 <img style={{ zIndex:12}} id={"header-img1"} src={headerImg1} alt="header"/>
@@ -29,12 +29,12 @@ const Main = (props) => {
                 {/*<Button variant="outlined" color="primary">{lang.main.bannerBtn}</Button>*/}
             </div>
             <div className={"statistics"}>
-                <div><span className={"statNumbers"}><AnimatedNumber style={{color:"white"}} start={0} end={10} duration={4000}/>+  </span><span>{lang.main.yearsOfExperience}</span></div>
-                <div><span className={"statNumbers"}><AnimatedNumber style={{color:"white"}} start={0} end={60} duration={5000}/>   </span><span>{lang.main.completedProjects}</span></div>
-                <div><span className={"statNumbers"}><AnimatedNumber style={{color:"white"}} start={0} end={5} duration={3000}/>+ </span><span>{lang.main.happyCustomers}</span></div>
+                <div><span className={"statNumbers"}><AnimatedNumber style={{color:"white"}} start={0} end={5} duration={1000}/>+  </span><span>{lang.main.yearsOfExperience}</span></div>
+                <div><span className={"statNumbers"}><AnimatedNumber style={{color:"white"}} start={0} end={15} duration={3000}/>   </span><span>{lang.main.completedProjects}</span></div>
+                <div><span className={"statNumbers"}><AnimatedNumber style={{color:"white"}} start={0} end={10} duration={3000}/>+ </span><span>{lang.main.happyCustomers}</span></div>
             </div>
             <h6 style={{margin:"30px 0 0 30px"}} className={"align-self-start p-2"} >{lang.main.myServices}</h6>
-            <div style={{width: "90%", padding:"10px 0 30px 0"}} className={"d-flex justify-content-between"} >
+            <div style={{width: "90%", padding:"10px 0 30px 0"}} className={"d-flex flex-wrap justify-content-around align-content-around"} >
                 <div className="card">
                     <div className="card-body">
                         <h6 className="card-title">{lang.main.card1.title}</h6>
@@ -53,8 +53,6 @@ const Main = (props) => {
                         <p className="card-text">{lang.main.card3.body}</p>
                     </div>
                 </div>
-            </div>
-            <div style={{width: "90%", padding:"10px 0 30px 0"}} className={"d-flex justify-content-between"} >
                 <div className="card">
                     <div className="card-body">
                         <h6 className="card-title">{lang.main.card4.title}</h6>
@@ -74,6 +72,7 @@ const Main = (props) => {
                     </div>
                 </div>
             </div>
+
         </div>
     );
 };

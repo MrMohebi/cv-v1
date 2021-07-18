@@ -21,9 +21,9 @@ export const langEn = {
     main:{
         bannerTitle:"Hi it's Mohebi,\n a web developer :)",
         bannerBtn:"explore now",
-        yearsOfExperience:"Years Of Experience",
-        completedProjects:"Complected Projects",
-        happyCustomers:"Happy Customers",
+        yearsOfExperience:"\nYears Of Experience",
+        completedProjects:"\nComplected Projects",
+        happyCustomers:"\nHappy Customers",
         myServices:"My Services:",
         card1:{
             title:"Web Development",
@@ -80,9 +80,9 @@ export const langFa ={
     main: {
         bannerTitle:"سلام من محبی ام،\n یه توسعه دهنده وب :)",
         bannerBtn:"باهم ببینیم",
-        yearsOfExperience:"سال تجربه",
-        completedProjects:"پروژه های انجام شده",
-        happyCustomers:"مشتری های راضیی",
+        yearsOfExperience:"سال تجربه\n",
+        completedProjects:"پروژه های انجام شده\n",
+        happyCustomers:"مشتری های راضیی\n",
         myServices:"خدمات قابل ارائه:",
         card1:{
             title:"توسعه دهنده وب",

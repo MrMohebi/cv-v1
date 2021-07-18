@@ -59,14 +59,41 @@
 }
 .main .card {
   background-color: #2c2c38;
-  width: 30%;
+  min-width: 180px;
+  max-width: 400px;
   height: 240px;
-  padding: 10px;
+  margin: 10px;
 }
 .main .card p {
   font-size: 1em;
   color: #7e7e81;
   white-space: pre-line;
+}
+
+.main-open-bs {
+  filter: blur(3px);
+  transform: translateX(275px);
+}
+
+@media screen and (min-width: 1090px) {
+  .card {
+    max-width: 280px !important;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .card {
+    max-width: 400px !important;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .main {
+    transition: transform 2s ease, filter 1s ease-in;
+    min-width: 100%;
+  }
+
+  .statistics {
+    white-space: pre-line;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

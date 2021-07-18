@@ -13,7 +13,7 @@
     justify-content: flex-start;
     align-items: center;
     width: inherit;
-    height: 230px;
+    height: 185px;
     opacity: 0.95;
     background: #252530;
 
@@ -104,7 +104,12 @@
       animation: badgeResize 1s ease infinite;
     }
   }
+}
 
+.open-bs{
+  width: 270px !important;
+  opacity: 1 !important;
+  transform: translateX(0px) !important;
 }
 
 
@@ -114,10 +119,20 @@
     height: 10px;
     opacity: 1;
   }90%{
-     min-width: 20px;
-     height: 20px;
-     opacity: 0.1;
-   }100%{
-      opacity: 0;
-    }
+    min-width: 20px;
+    height: 20px;
+    opacity: 0.1;
+  }100%{
+    opacity: 0;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .brief-story {
+    position: absolute;
+    transform: translateX(-270px);
+    opacity: 0;
+    transition: width 1.5s ease, opacity 2s ease, transform 2s ease;
+  }
 }

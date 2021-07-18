@@ -1,5 +1,6 @@
 body{
   background: #191923;
+  overflow: hidden;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -36,11 +37,48 @@ p, h1, h2, h3, h4, h5, h6{
   width: 98vw;
   height: 96vh;
 
-
-
   .sidebar{
     background: #20202a;
     width: 100px;
     z-index: 2;
+  }
+}
+
+.menu-icon{
+  display: none !important;
+  position: absolute;
+  margin: 20px;
+  color: #FFC107FF;
+  background: #2c2c38;
+  padding: 5px;
+  width: 40px;
+  height: 40px;
+  z-index: 99;
+  border-radius: 5px;
+  animation: menuIconEffect 2s ease infinite;
+  transition: opacity 1s ease;
+}
+
+.hide-menu-icon{
+  opacity: 0 !important;
+}
+
+@keyframes menuIconEffect {
+  0%{
+    filter: drop-shadow(0 0 0 rgba(255, 255, 255, 0));
+  }50%{
+     filter: drop-shadow(0 0 6px #ffffff);
+   }100%{
+      filter: drop-shadow(0 0 0 rgba(255, 255, 255, 0));
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .main-container {
+    height: 99vh;
+  }
+  .menu-icon{
+    display: flex !important;
   }
 }
