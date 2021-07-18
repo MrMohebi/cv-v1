@@ -31,18 +31,28 @@ export const langEn = {
             link:"",
         },
         card2:{
-            title:"",
-            body:"",
+            title:"Server Management",
+            body:"Setup and configuration of software, services or website running on the server. Specifically linux servers.",
             link:"",
         },
         card3:{
-            title:"",
-            body:"",
+            title:"Web 3d",
+            body:"Completely new experience! A world with 3d and interactive object. Bring your ideas in your websites, Introduce product by 3d models :)",
             link:"",
         },
         card4:{
-            title:"",
-            body:"",
+            title:"Architecture Design",
+            body:"All phases of project development including architecture and design, user interface design, module and component construction. Also designing and administering databases",
+            link:"",
+        },
+        card5:{
+            title:"Social Media Bots",
+            body:"Connect your service to social medias, manage groups or notify customers. telegram bots or games and etc...",
+            link:"",
+        },
+        card6:{
+            title:"Cryptocurrency",
+            body:"Program smart contracts on blockchains, On the other hand better to say distributed systems or programs",
             link:"",
         },
     }
@@ -73,6 +83,36 @@ export const langFa ={
         yearsOfExperience:"سال تجربه",
         completedProjects:"پروژه های انجام شده",
         happyCustomers:"مشتری های راضیی",
-        myServices:"خدمات قابل ارائه:"
+        myServices:"خدمات قابل ارائه:",
+        card1:{
+            title:"توسعه دهنده وب",
+            body:"ساخت وب سایت و وب اپلیکیشن برای کسب و کار، فروشگاه و یا معرفی شخصی, \n هرآنچه که بتوانید تصورش را کنید  :)",
+            link:"",
+        },
+        card2:{
+            title:"مدیریت سرور",
+            body:"راه اندازی و پیکربندی سرویس ها، نرم افزار و وب سایت بر روی سرور، به طور ویژه سرور های لینکوسی.",
+            link:"",
+        },
+        card3:{
+            title:"وب سایت های سه بعدی",
+            body:"یک تجربه کاملا جدید! دنیایی با مدل های سه بعدی تعاملی. تصوارت و ایده های خود را به وبسایتتان بیاوریدو میتوانین کالاهای خود را به طور سه بعدی معرفی کنید :)",
+            link:"",
+        },
+        card4:{
+            title:"طراحی معماری پروژه",
+            body:"تمامی فازهای توسعه پروژه شامل طراحی و معماری کلی، رابط های کاربری، ساختار مدل ها و کامپوننت ها. همچنین مدیریت و طراحی دیتابیس های مختلف",
+            link:"",
+        },
+        card5:{
+            title:"ربات شبکه های اجتماعی",
+            body:"اتصال سرویس شما به شبکه های اجتماعی برای اطلاع رسانی مشتریان و یا مدیریت گروه ها. بات و گیم های تلگرامی و...",
+            link:"",
+        },
+        card6:{
+            title:"رمزارز ها",
+            body:"برنامه نویسی اسمارت کانترکت بر بستر بلاکچین، به عبارتی بهتر برنامه ها و سیستم های غیر متمرکز",
+            link:"",
+        },
     }
 }
