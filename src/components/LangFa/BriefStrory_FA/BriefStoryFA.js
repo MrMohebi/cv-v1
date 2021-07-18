@@ -146,10 +146,10 @@ export const BriefStoryFA = (props) =>{
                 <div style={{margin: "0 0 50px 0"}}/>
             </div>
             <div className={"bs-social-network"}>
-                <a className={"m-2"} href="https://github.com/MrMohebi">
+                <a href="https://github.com/MrMohebi">
                     <GitHub style={{ color: "#8c8c8e" }} fontSize="small" />
                 </a>
-                <a className={"m-2"} href="">
+                <a href="https://t.me/MMMohebi79">
                     <Telegram style={{ color: "#8c8c8e" }} fontSize="small"/>
                 </a>
             </div>
