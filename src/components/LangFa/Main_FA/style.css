@@ -93,7 +93,7 @@
 }
 @media only screen and (max-width: 600px) {
   .main {
-    transition: transform 2s ease, filter 1s ease-in;
+    transition: transform 0.2s ease;
     min-width: 100%;
   }
 

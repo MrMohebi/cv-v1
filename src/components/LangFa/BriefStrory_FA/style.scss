@@ -133,6 +133,6 @@
     position: absolute;
     transform: translateX(+270px);
     opacity: 0;
-    transition: width 1.5s ease, opacity 2s ease, transform 2s ease;
+    transition: opacity 0.5s ease, transform 0.2s ease;
   }
 }
