@@ -39,10 +39,10 @@ export const BriefStory = (props) =>{
                     <span className={"key"}>Age:</span><span className={"val"}>21</span>
                 </div>
                 <div className={"key-val-container"}>
-                    <span className={"key"}>Phone:</span><span className={"val"}>(+98)9221321311</span>
+                    <span className={"key"}>Phone:</span><a href={"tel:+9891221321311"} style={{zIndex:10, textDecoration:"none"}}><span className={"val"}>(+98)9221321311</span></a>
                 </div>
                 <div className={"key-val-container"}>
-                    <span className={"key"}>Email:</span><span className={"val"}>MMMohebi@outlook.com</span>
+                    <span className={"key"}>Email:</span><a href={"mailto:MMMohebi@outlook.com"} style={{zIndex:10, textDecoration:"none"}}><span className={"val"}>MMMohebi@outlook.com</span></a>
                 </div>
 
                 <hr style={{width:"70%", border: "1px solid rgb(126 126 129)", margin:"20px 0", borderRadius:"5px", zIndex:4 }} />
