@@ -73,11 +73,14 @@ export const BriefStoryFA = (props) =>{
 
                 <div style={{width:"inherit"}}>
                     <span className={"title"} >تجارب</span>
-                    <li className={"key mlr-list"}><BlurOn className={"knowledge-icon"}/>  Laravel, Symfony, Django</li>
+                    <li className={"key mlr-list"}><BlurOn className={"knowledge-icon"}/>  Laravel, Symfony, Django, Fastify</li>
                     <li className={"key mlr-list"}><BlurOn className={"knowledge-icon"}/>  Nginx, Apache</li>
                     <li className={"key mlr-list"}><BlurOn className={"knowledge-icon"}/>  Mysql, Mongodb</li>
+                    <li className={"key mlr-list"}><BlurOn className={"knowledge-icon"}/>  Rabbitmq, kafka</li>
+                    <li className={"key mlr-list"}><BlurOn className={"knowledge-icon"}/>  Redis</li>
                     <li className={"key mlr-list"}><BlurOn className={"knowledge-icon"}/>  React-js, Vue-js</li>
-                    <li className={"key mlr-list"}><BlurOn className={"knowledge-icon"}/>  Redux</li>
+                    <li className={"key mlr-list"}><BlurOn className={"knowledge-icon"}/>  Redux, Recoil</li>
+                    <li className={"key mlr-list"}><BlurOn className={"knowledge-icon"}/>  GraphQL, RESTful API</li>
                     <li className={"key mlr-list"}><BlurOn className={"knowledge-icon"}/>  Three-js, WebGL</li>
                     <li className={"key mlr-list"}><BlurOn className={"knowledge-icon"}/>  GSAP, Animate.css</li>
                     <li className={"key mlr-list"}><BlurOn className={"knowledge-icon"}/>  Bootstrap, Material-ui</li>
