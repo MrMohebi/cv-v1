@@ -98,7 +98,7 @@ export const BriefStory = (props) =>{
                     <span className={"title"} >Coding</span>
                     <div className={"key-val-container"} style={{paddingBottom: "2px"}}>
                         <span className={"key"}>PHP</span>
-                        <span className={"val"}><AnimatedNumber start={0} end={95} duration={2000} />%</span>
+                        <span className={"val"}><AnimatedNumber start={0} end={90} duration={2000} />%</span>
                     </div>
                     <div style={{margin:"5px 30px"}}>
                         <AnimatedLinePBar percent={95} width={"210px"} color={"#FFC107FF"} trailColor={'#181616FF'} />
