@@ -34,9 +34,9 @@ const MainFA = (props) => {
                     {/*<Button variant="outlined" color="primary">باهم ببینیم</Button>*/}
                 </div>
                 <div className={"statistics"}>
-                    <div><span className={"statNumbers"}><AnimatedNumber style={{color:"white"}} start={0} end={5} duration={1000}/>+  </span><span>{"\nسال تجربه\n"}</span></div>
-                    <div><span className={"statNumbers"}><AnimatedNumber style={{color:"white"}} start={0} end={15} duration={3000}/>   </span><span>{"\nپروژه های انجام شده\n"}</span></div>
-                    <div><span className={"statNumbers"}><AnimatedNumber style={{color:"white"}} start={0} end={10} duration={3000}/>+ </span><span>{"\nکارفرما های راضی\n"}</span></div>
+                    <div><span className={"statNumbers"}><AnimatedNumber style={{color:"white"}} start={0} end={5} duration={1000}/>+  </span><span>{"\nسال تجربه\n"}</span> </div>
+                    <div><span className={"statNumbers"}><AnimatedNumber style={{color:"white"}} start={0} end={18} duration={3000}/>   </span><span>{"\nپروژه های انجام شده\n"}</span> </div>
+                    <div><span className={"statNumbers"}><AnimatedNumber style={{color:"white"}} start={0} end={11} duration={3000}/>+ </span><span>{"\nکارفرما های راضی\n"}</span> </div>
                 </div>
                 <h6 style={{margin:"30px 30px 0 30px"}} className={"align-self-start p-2"} >خدمات قابل ارائه:</h6>
                 <div style={{width: "90%", padding:"10px 0 30px 0"}} className={"d-flex flex-wrap justify-content-around align-content-around"} >

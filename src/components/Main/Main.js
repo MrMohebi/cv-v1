@@ -35,8 +35,8 @@ const Main = (props) => {
                 </div>
                 <div className={"statistics"}>
                     <div><span className={"statNumbers"}><AnimatedNumber style={{color:"white"}} start={0} end={5} duration={1000}/>+  </span><span>{"\nYears Of Experience"}</span></div>
-                    <div><span className={"statNumbers"}><AnimatedNumber style={{color:"white"}} start={0} end={15} duration={3000}/>   </span><span>{"\nComplected Projects"}</span></div>
-                    <div><span className={"statNumbers"}><AnimatedNumber style={{color:"white"}} start={0} end={10} duration={3000}/>+ </span><span>{"\nHappy Customers"}</span></div>
+                    <div><span className={"statNumbers"}><AnimatedNumber style={{color:"white"}} start={0} end={18} duration={3000}/>   </span><span>{"\nComplected Projects"}</span></div>
+                    <div><span className={"statNumbers"}><AnimatedNumber style={{color:"white"}} start={0} end={11} duration={3000}/>+ </span><span>{"\nHappy Customers"}</span></div>
                 </div>
                 <h6 style={{margin:"30px 30px 0 30px"}} className={"align-self-start p-2"} >My Services:</h6>
                 <div style={{width: "90%", padding:"10px 0 30px 0"}} className={"d-flex flex-wrap justify-content-around align-content-around"} >
