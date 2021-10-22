@@ -20,7 +20,7 @@ const MainFA = (props) => {
     // }
 
     return (
-        <PerfectScrollbar>
+        <PerfectScrollbar  options={{suppressScrollX:true}}>
             <div onClick={props.tapExitBSFunc} className={"main" + props.mainOpenBSClass} >
                 <div className={"change-lang-container"} >
                     <ChangeLangSwitch/>
