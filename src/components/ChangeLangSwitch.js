@@ -4,19 +4,17 @@ import Switch from "react-switch";
 const ChangeLangSwitch = () => {
     let [nextLang, setNextLang] = useState("fa")
     useEffect(()=>{
-        console.log(window.location.href);
         let lang = window.location.pathname.split("/").filter(i=> i !== "")
         if(lang.hasOwnProperty(0) && lang[0].length === 2){
-            console.log(lang[0]);
-            if(lang[0]==="fa")
+            if(lang[0] === "fa")
                 setNextLang("")
         }
     },[])
 
     let handleChange = () =>{
-        window.location.href = "/" + nextLang
-        setNextLang(nextLang === "fa" ? "" : "fa")
+        window.location.href =  "/"+nextLang
     }
+
     return (
         <Switch
             checked={nextLang === "fa"}
