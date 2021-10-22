@@ -4,9 +4,10 @@
   background: #20202a;
   width: 270px;
   height: inherit;
+  z-index: 2;
 }
 .brief-story .bs-title {
-  z-index: 2;
+  z-index: 11;
   position: fixed;
   display: flex;
   flex-direction: column;
@@ -26,7 +27,8 @@
   color: #7e7e81;
 }
 .brief-story .bs-info {
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
