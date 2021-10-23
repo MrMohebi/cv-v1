@@ -44,10 +44,7 @@ const IndexPage = () => {
     });
 
     useEffect(()=>{
-        setTimeout(()=>{
-            logs()
-        },5000)
-
+        logs()
     },[])
 
     return (
