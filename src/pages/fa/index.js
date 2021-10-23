@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react";
 import {Menu} from "@material-ui/icons";
-
+import {useSwipeable} from "react-swipeable";
+import logs from "../../js/logs";
 
 // plugin
 import { gsap } from "gsap";
@@ -15,7 +16,6 @@ import 'react-circular-progressbar/dist/styles.css';
 //components
 import {BriefStoryFA} from "../../components/LangFa/BriefStrory_FA/BriefStoryFA";
 import MainFA from "../../components/LangFa/Main_FA/MainFA";
-import {useSwipeable} from "react-swipeable";
 
 const IndexPage = () => {
     gsap.registerPlugin(ScrollTrigger);
@@ -24,7 +24,7 @@ const IndexPage = () => {
     let [menuIconClass, setMenuIconClass] = useState("");
 
     useEffect(()=>{
-        document.body.style.direction = "rtl"
+        logs()
         document.body.style.fontFamily = "AppIranSans"
     },[])
 
@@ -52,11 +52,11 @@ const IndexPage = () => {
                 <title>MMMohebi CV</title>
             </Helmet>
             <div {...handlers} className={"main-container"}>
-                <div onClick={openBriefStory} className={"menu-icon d-flex justify-content-center align-items-center" + menuIconClass}>
+                <div onClick={openBriefStory} style={{right:0}}  className={"menu-icon d-flex justify-content-center align-items-center" + menuIconClass}>
                     <Menu/>
                 </div>
-                <BriefStoryFA bSOpenClass={bSOpenClass} tapExitBSFunc={closeBriefStory}/>
                 <MainFA mainOpenBSClass={mainOpenBSClass} tapExitBSFunc={closeBriefStory}/>
+                <BriefStoryFA bSOpenClass={bSOpenClass} tapExitBSFunc={closeBriefStory}/>
                 {/*<div className={"sidebar"}></div>*/}
             </div>
         </main>

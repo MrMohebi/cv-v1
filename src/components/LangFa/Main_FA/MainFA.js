@@ -21,8 +21,8 @@ const MainFA = (props) => {
 
     return (
         <PerfectScrollbar  options={{suppressScrollX:true}}>
-            <div onClick={props.tapExitBSFunc} className={"main" + props.mainOpenBSClass} >
-                <div className={"change-lang-container"} >
+            <div onClick={props.tapExitBSFunc} className={"main-FA" + props.mainOpenBSClass} >
+                <div className={"change-lang-container-FA"} >
                     <ChangeLangSwitch/>
                 </div>
                 <div className="back-img"/>
@@ -38,7 +38,7 @@ const MainFA = (props) => {
                     <div><span className={"statNumbers"}><AnimatedNumber style={{color:"white"}} start={0} end={18} duration={3000}/>   </span><span>{"\nپروژه های انجام شده\n"}</span> </div>
                     <div><span className={"statNumbers"}><AnimatedNumber style={{color:"white"}} start={0} end={11} duration={3000}/>+ </span><span>{"\nکارفرما های راضی\n"}</span> </div>
                 </div>
-                <h6 style={{margin:"30px 30px 0 30px"}} className={"align-self-start p-2"} >خدمات قابل ارائه:</h6>
+                <h6 style={{margin:"30px 30px 0 30px", direction:"rtl"}} className={"align-self-end p-2"} >خدمات قابل ارائه:</h6>
                 <div style={{width: "90%", padding:"10px 0 30px 0"}} className={"d-flex flex-wrap justify-content-around align-content-around"} >
                     <div className="card">
                         <div className="card-body">

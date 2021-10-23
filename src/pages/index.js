@@ -1,6 +1,7 @@
-import React, {useState} from "react";
+import React, {useState, useEffect, } from "react";
 import {Menu} from "@material-ui/icons";
 import {useSwipeable} from "react-swipeable";
+import logs from "../js/logs";
 
 // plugin
 import { gsap } from "gsap";
@@ -17,9 +18,6 @@ import Main from "../components/Main/Main";
 import {Helmet} from "react-helmet";
 
 const IndexPage = () => {
-    console.log(logEinstein)
-    console.log(logMaze)
-
     gsap.registerPlugin(ScrollTrigger);
     let [bSOpenClass, setBSOpenClass] = useState("");
     let [mainOpenBSClass, setMainOpenBSClass] = useState("");
@@ -45,6 +43,13 @@ const IndexPage = () => {
         onSwipedRight: openBriefStory,
     });
 
+    useEffect(()=>{
+        setTimeout(()=>{
+            logs()
+        },5000)
+
+    },[])
+
     return (
     <main className={"d-flex align-items-center justify-content-center"}>
         <Helmet>
@@ -63,45 +68,3 @@ const IndexPage = () => {
 }
 
 export default IndexPage
-
-
-
-
-
-
-const logEinstein =
-    "       -''--.\n" +
-    "       _`>   `\\.-'<\n" +
-    "    _.'     _     '._\n" +
-    "  .'   _.='   '=._   '.\n" +
-    "  >_   / /_\\ /_\\ \\   _<\n" +
-    "    / (  \\o/\\\\o/  ) \\\n" +
-    "    >._\\ .-,_)-. /_.<\n" +
-    "        /__/ \\__\\ \n" +
-    "          '---'    \n"+
-    "       You are curious,\n"+
-    "        I Like You :)\n"
-
-
-const logMaze = "           solve this instead of wasting time here :)\n" +
-    "  _________________________________________________________________\n" +
-    " |         ___________            |   __________________________   |\n" +
-    " |  send  |   _____   |  |  |  |  |  |   ____________________   |  |\n" +
-    " |________|  |     |_____|  |  |_____|  |   _________________   |  |\n" +
-    " |___________|  |___________|  |   _____|  |   ___________   |  |  |\n" +
-    " |   ___________|   ___________|  |  ______|  |   ________|  |_____|\n" +
-    " |  |   ___________|   ___________|___________|  |___________|     |\n" +
-    " |  |  |   __         |   _________________   |_____   |     |  |  |\n" +
-    " |  |  |  |  |  |  |  |  |   ______________|_____   |  |  |  |  |  |\n" +
-    " |  |  |  |  |  |  |_____|  |   _____   |   __   |  |  |  |  |  |  |\n" +
-    " |  |  |  |  |  |___________|  |     |  |  |  |  |  |  |  |  |  |  |\n" +
-    " |  |  |  |  |_________________|  |  |  |  |  |  |  |  |  |  |  |  |\n" +
-    " |  |  |  |  |   _________________|_____|  |  |  |  |  |  |  |  |  |\n" +
-    " |  |  |  |  |  |   __    ______________|  |  |  |  |   __|  |  |  |\n" +
-    " |  |  |  |  |  |  |  |  |   ________   |  |  |  |  |  |  |  |  |  |\n" +
-    " |  |  |  |  |  |  |  |  |  |   _____   |  |  |  |  |  | ____|  |  |\n" +
-    " |  |  |  |  |  |  |  |  |  |  |  ______|  |  |  |  |   ________|  |\n" +
-    " |  |  |_____|  |  |  |  |  |  |_____   |  |  |  |  |  |           |\n" +
-    " |  |_____   |  |__|  |  |  |________|  |  |  |  |__|  |   answer  |\n" +
-    " |___________|_______________________|________|________|___________|\n" +
-    "                      To Me: MMMohebi@outlook.com ;) "

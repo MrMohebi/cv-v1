@@ -1,13 +1,15 @@
-.main {
+.main-FA {
   display: flex;
   flex-direction: column;
-  justify-content: start;
   align-items: center;
   overflow: scroll;
   background: #1e1e28;
   width: 100%;
 }
-.main .back-img {
+.main-FA div {
+  direction: rtl;
+}
+.main-FA .back-img {
   overflow-y: hidden;
   position: fixed;
   width: inherit;
@@ -16,7 +18,7 @@
   background: url("../../../images/header.jpg") no-repeat 70% 75%;
   opacity: 0.1;
 }
-.main .main-banner {
+.main-FA .main-banner {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -27,14 +29,14 @@
   height: 300px;
   opacity: 0.7;
 }
-.main .main-banner img {
+.main-FA .main-banner img {
   width: 100%;
   height: inherit;
   grid-column: 1;
   grid-row-start: 1;
   grid-row-end: 2;
 }
-.main .main-banner .banner-title {
+.main-FA .main-banner .banner-title {
   z-index: 10;
   margin: 50px;
   grid-column: 1;
@@ -42,29 +44,29 @@
   color: white;
   white-space: pre-line;
 }
-.main .statistics {
+.main-FA .statistics {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 90%;
 }
-.main .statistics span {
+.main-FA .statistics span {
   color: white;
   font-size: 0.9em;
 }
-.main .statistics .statNumbers {
+.main-FA .statistics .statNumbers {
   color: #FFC107FF;
   font-size: 1.3em;
   font-weight: bold;
 }
-.main .card {
+.main-FA .card {
   background-color: #2c2c38;
   min-width: 180px;
   max-width: 400px;
   height: 240px;
   margin: 10px;
 }
-.main .card p {
+.main-FA .card p {
   font-size: 1em;
   color: #7e7e81;
   white-space: pre-line;
@@ -75,31 +77,10 @@
   transform: translateX(-275px);
 }
 
-.change-lang-container {
-  margin: 20px 20px 0 0;
-  align-self: flex-end;
+.change-lang-container-FA {
+  margin: 20px;
+  align-self: flex-start;
   z-index: 5;
-}
-
-@media screen and (min-width: 1090px) {
-  .card {
-    max-width: 280px !important;
-  }
-}
-@media screen and (min-width: 1400px) {
-  .card {
-    max-width: 400px !important;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .main {
-    transition: transform 0.2s ease;
-    min-width: 100%;
-  }
-
-  .statistics {
-    white-space: pre-line;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

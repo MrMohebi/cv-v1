@@ -1,12 +1,14 @@
-.main{
+.main-FA{
   display: flex;
   flex-direction: column;
-  justify-content: start;
   align-items: center;
   overflow: scroll;
   background: #1e1e28;
   width: 100%;
 
+  div{
+    direction: rtl;
+  }
   .back-img{
     overflow-y: hidden;
     position: fixed;
@@ -85,30 +87,30 @@
   transform: translateX(-275px);
 }
 
-.change-lang-container{
-  margin: 20px 20px 0 0;
-  align-self: flex-end;
+.change-lang-container-FA{
+  margin: 20px;
+  align-self: flex-start;
   z-index: 5;
 }
-
-@media screen and (min-width: 1090px) {
-  .card {
-    max-width: 280px !important;
-  }
-}
-
-@media screen and (min-width: 1400px) {
-  .card {
-    max-width: 400px !important;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .main{
-    transition: transform 0.2s ease;
-    min-width: 100%;
-  }
-  .statistics{
-    white-space: pre-line;
-  }
-}
+//
+//@media screen and (min-width: 1090px) {
+//  .card {
+//    max-width: 280px !important;
+//  }
+//}
+//
+//@media screen and (min-width: 1400px) {
+//  .card {
+//    max-width: 400px !important;
+//  }
+//}
+//
+//@media only screen and (max-width: 600px) {
+//  .main{
+//    transition: transform 0.2s ease;
+//    min-width: 100%;
+//  }
+//  .statistics{
+//    white-space: pre-line;
+//  }
+//}

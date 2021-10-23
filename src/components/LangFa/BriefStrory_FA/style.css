@@ -1,4 +1,6 @@
 .brief-story_FA {
+  direction: rtl;
+  right: 0;
   display: flex;
   flex-direction: column;
   background: #20202a;
