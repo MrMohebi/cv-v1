@@ -154,13 +154,16 @@ export const BriefStory = (props) =>{
 
             </div>
 
-            <div className={"bs-social-network"}>
-                <a href="https://github.com/MrMohebi">
-                    <GitHub style={{ color: "#8c8c8e" }} fontSize="small" />
-                </a>
-                <a href="https://t.me/MMMohebi79">
-                    <Telegram style={{ color: "#8c8c8e" }} fontSize="small"/>
-                </a>
+            <div className={"bs-social-network d-flex flex-column align-items-center justify-content-center p-3"}>
+                <div className={"d-flex flex-row justify-content-around w-100"}>
+                    <a href="https://github.com/MrMohebi" target={"_blank"}>
+                        <GitHub style={{ color: "#8c8c8e" }} fontSize={window.screen.width > 600 ? "" :"large"}/>
+                    </a>
+                    <a href="https://t.me/MMMohebi79" target={"_blank"}>
+                        <Telegram style={{ color: "#8c8c8e" }} fontSize={window.screen.width > 600 ? "" :"large"}/>
+                    </a>
+                </div>
+                <span className={"m-3"}>Find more here, Or contact Me :)</span>
             </div>
         </div>
     );

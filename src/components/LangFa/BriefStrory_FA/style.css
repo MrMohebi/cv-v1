@@ -71,15 +71,15 @@
   height: 6px;
 }
 .brief-story_FA .bs-social-network {
-  z-index: 2;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
   width: inherit;
   height: 50px;
   opacity: 0.95;
   background: #252530;
+}
+.brief-story_FA .bs-social-network span {
+  display: none;
+  color: #8c8c8e;
+  font-size: 0.8em;
 }
 .brief-story_FA #badgeStatic .MuiBadge-colorSecondary {
   background: #ffc107;
@@ -122,6 +122,13 @@
     transform: translateX(270px);
     opacity: 0;
     transition: opacity 0.5s ease, transform 0.2s ease;
+  }
+
+  .bs-social-network {
+    height: 100px !important;
+  }
+  .bs-social-network span {
+    display: inline !important;
   }
 }
 
