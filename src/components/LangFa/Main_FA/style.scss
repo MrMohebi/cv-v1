@@ -1,10 +1,12 @@
 .main-FA{
   display: flex;
   flex-direction: column;
+  justify-content: start;
   align-items: center;
-  overflow: scroll;
+  overflow-y: scroll;
   background: #1e1e28;
   width: 100%;
+  overflow-x: hidden;
 
   div{
     direction: rtl;

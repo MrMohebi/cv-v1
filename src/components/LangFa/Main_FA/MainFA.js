@@ -33,11 +33,11 @@ const MainFA = (props) => {
                     <h1 className={"banner-title"}>سلام محبی هستم،<br/>طراح و توسعه دهنده وب :)</h1>
                     {/*<Button variant="outlined" color="primary">باهم ببینیم</Button>*/}
                 </div>
-                <div className={"statistics"}>
-                    <div><span className={"statNumbers"}><AnimatedNumber style={{color:"white"}} start={0} end={5} duration={1000}/>+  </span><span>{"\nسال تجربه\n"}</span> </div>
-                    <div><span className={"statNumbers"}><AnimatedNumber style={{color:"white"}} start={0} end={18} duration={3000}/>   </span><span>{"\nپروژه های انجام شده\n"}</span> </div>
-                    <div><span className={"statNumbers"}><AnimatedNumber style={{color:"white"}} start={0} end={11} duration={3000}/>+ </span><span>{"\nکارفرما های راضی\n"}</span> </div>
-                </div>
+                <a href={"https://github.com/MrMohebi"} target="_blank" className={"statistics"}>
+                    <div><span className={"statNumbers"}><AnimatedNumber style={{color:"white"}} start={0} end={6} duration={1000}/>+  </span><span>{"\nسال تجربه\n"}</span> </div>
+                    <div><span className={"statNumbers"}><AnimatedNumber style={{color:"white"}} start={0} end={32} duration={3000}/>   </span><span>{"\nپروژه های انجام شده\n"}</span> </div>
+                    <div><span className={"statNumbers"}><AnimatedNumber style={{color:"white"}} start={0} end={21} duration={3000}/>+ </span><span>{"\nکارفرما های راضی\n"}</span> </div>
+                </a>
                 <h6 style={{margin:"30px 30px 0 30px", direction:"rtl"}} className={"align-self-end p-2"} >خدمات قابل ارائه:</h6>
                 <div style={{width: "90%", padding:"10px 0 30px 0"}} className={"d-flex flex-wrap justify-content-around align-content-around"} >
                     <div className="card">
@@ -52,12 +52,12 @@ const MainFA = (props) => {
                             <p className="card-text">راه اندازی و پیکربندی سرویس ها، نرم افزار و وب سایت روی سرور، به طور ویژه سرور های لینکوسی.</p>
                         </div>
                     </div>
-                    <div className="card">
-                        <div className="card-body">
-                            <h6 className="card-title">وب سایت های سه بعدی</h6>
-                            <p className="card-text">یک تجربه جدید! دنیایی با مدل های تعاملی. می توانید کالاهای خود را به طور سه بعدی معرفی کنید. تصوارت و ایده های خود را به وبسایتتان بیاورید:)</p>
-                        </div>
-                    </div>
+                    {/*<div className="card">*/}
+                    {/*    <div className="card-body">*/}
+                    {/*        <h6 className="card-title">وب سایت های سه بعدی</h6>*/}
+                    {/*        <p className="card-text">یک تجربه جدید! دنیایی با مدل های تعاملی. می توانید کالاهای خود را به طور سه بعدی معرفی کنید. تصوارت و ایده های خود را به وبسایتتان بیاورید:)</p>*/}
+                    {/*    </div>*/}
+                    {/*</div>*/}
                     <div className="card">
                         <div className="card-body">
                             <h6 className="card-title">طراحی معماری پروژه</h6>
@@ -70,12 +70,12 @@ const MainFA = (props) => {
                             <p className="card-text">اتصال سرویس شما به شبکه های اجتماعی برای اطلاع رسانی مشتریان و یا مدیریت گروه ها. بات و گیم های تلگرامی و...</p>
                         </div>
                     </div>
-                    <div className="card">
-                        <div className="card-body">
-                            <h6 className="card-title">رمز ارز ها</h6>
-                            <p className="card-text">برنامه نویسی اسمارت کانترکت بر بستر بلاکچین، به عبارتی بهتر برنامه ها و سیستم های غیر متمرکز</p>
-                        </div>
-                    </div>
+                    {/*<div className="card">*/}
+                    {/*    <div className="card-body">*/}
+                    {/*        <h6 className="card-title">رمز ارز ها</h6>*/}
+                    {/*        <p className="card-text">برنامه نویسی اسمارت کانترکت بر بستر بلاکچین، به عبارتی بهتر برنامه ها و سیستم های غیر متمرکز</p>*/}
+                    {/*    </div>*/}
+                    {/*</div>*/}
                 </div>
             </div>
         </PerfectScrollbar>

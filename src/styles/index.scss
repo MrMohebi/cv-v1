@@ -3,6 +3,11 @@ body{
   font-family: TisaSansPro-Regular, serif;
 }
 
+a {
+  color: blue;
+  text-decoration: none; /* no underline */
+}
+
 /* Hide scrollbar for Chrome, Safari and Opera */
 .main::-webkit-scrollbar, .bs-info::-webkit-scrollbar, body::-webkit-scrollbar {
   display: none;
@@ -93,3 +98,6 @@ p, h1, h2, h3, h4, h5, h6{
     display: flex !important;
   }
 }
+
+
+

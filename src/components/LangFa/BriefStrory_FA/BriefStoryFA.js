@@ -40,7 +40,7 @@ export const BriefStoryFA = (props) =>{
                         <span className={"key"}>شهر: </span><span className={"val"}>کرمان</span>
                     </div>
                     <div className={"key-val-container"}>
-                        <span className={"key"}>سن:</span><span className={"val"}>21</span>
+                        <span className={"key"}>سن:</span><span className={"val"}>22</span>
                     </div>
                     <div className={"key-val-container"}>
                         <span className={"key"}>شماره همراه:</span><a href={"tel:+9891221321311"} style={{zIndex:10, textDecoration:"none"}}><span className={"val"}>9221321311(98+)</span></a>
@@ -75,25 +75,29 @@ export const BriefStoryFA = (props) =>{
 
                     <hr style={{width:"70%", border: "1px solid rgb(126 126 129)", margin:"20px 0", borderRadius:"5px", zIndex:4 }} />
 
-                    <div style={{width:"inherit"}}>
+                    <div style={{width:"inherit",display:"flex",flexDirection:"column"}}>
                         <span className={"title"} >تجارب</span>
-                        <li className={"key mlr-list"}><BlurOn className={"knowledge-icon"}/>  Laravel, Symfony, Fastify</li>
-                        <li className={"key mlr-list"}><BlurOn className={"knowledge-icon"}/>  Nginx, Apache</li>
-                        <li className={"key mlr-list"}><BlurOn className={"knowledge-icon"}/>  Mysql, Mongodb</li>
-                        <li className={"key mlr-list"}><BlurOn className={"knowledge-icon"}/>  Rabbitmq, kafka</li>
-                        <li className={"key mlr-list"}><BlurOn className={"knowledge-icon"}/>  Redis</li>
-                        <li className={"key mlr-list"}><BlurOn className={"knowledge-icon"}/>  React-js, Vue-js</li>
-                        <li className={"key mlr-list"}><BlurOn className={"knowledge-icon"}/>  Redux, Recoil</li>
-                        <li className={"key mlr-list"}><BlurOn className={"knowledge-icon"}/>  GraphQL, RESTful API</li>
-                        <li className={"key mlr-list"}><BlurOn className={"knowledge-icon"}/>  Three-js, WebGL</li>
-                        <li className={"key mlr-list"}><BlurOn className={"knowledge-icon"}/>  GSAP, Animate.css</li>
-                        <li className={"key mlr-list"}><BlurOn className={"knowledge-icon"}/>  Bootstrap, Material-ui</li>
-                        <li className={"key mlr-list"}><BlurOn className={"knowledge-icon"}/>  Sass, Less, Scss</li>
-                        <li className={"key mlr-list"}><BlurOn className={"knowledge-icon"}/>  Git</li>
-                        <li className={"key mlr-list"}><BlurOn className={"knowledge-icon"}/>  Docker</li>
-                        <li className={"key mlr-list"}><BlurOn className={"knowledge-icon"}/>  Tkinter</li>
-                        <li className={"key mlr-list"}><BlurOn className={"knowledge-icon"}/>  Telegram Bots</li>
-                        <li className={"key mlr-list"}><BlurOn className={"knowledge-icon"}/>  Trading Bots</li>
+                        <span className={"key mlr-list"}>بک اند: </span>
+                        <li className={"key mlr-list-2"}><BlurOn className={"knowledge-icon"}/>  Laravel, Fastify</li>
+                        <li className={"key mlr-list-2"}><BlurOn className={"knowledge-icon"}/>  Gin Gonic </li>
+                        <li className={"key mlr-list-2"}><BlurOn className={"knowledge-icon"}/>  Mysql, Mongodb</li>
+                        <li className={"key mlr-list-2"}><BlurOn className={"knowledge-icon"}/>  Redis</li>
+                        <span className={"key mlr-list"}>سرور: </span>
+                        <li className={"key mlr-list-2"}><BlurOn className={"knowledge-icon"}/>  Docker</li>
+                        <li className={"key mlr-list-2"}><BlurOn className={"knowledge-icon"}/>  Nginx, Apache</li>
+                        <li className={"key mlr-list-2"}><BlurOn className={"knowledge-icon"}/>  Rabbitmq, kafka</li>
+                        <li className={"key mlr-list-2"}><BlurOn className={"knowledge-icon"}/>  GraphQL, RESTful API</li>
+                        <span className={"key mlr-list"}>فرانت اند: </span>
+                        <li className={"key mlr-list-2"}><BlurOn className={"knowledge-icon"}/>  React-js, Vue-js</li>
+                        <li className={"key mlr-list-2"}><BlurOn className={"knowledge-icon"}/>  NextJS, NuxtJS</li>
+                        <li className={"key mlr-list-2"}><BlurOn className={"knowledge-icon"}/>  Three-js, WebGL</li>
+                        <li className={"key mlr-list-2"}><BlurOn className={"knowledge-icon"}/>  GSAP, Animate.css</li>
+                        <li className={"key mlr-list-2"}><BlurOn className={"knowledge-icon"}/>  Tailwind, Material-ui</li>
+                        <li className={"key mlr-list-2"}><BlurOn className={"knowledge-icon"}/>  Sass, Scss</li>
+                        <span className={"key mlr-list"}>عمومی: </span>
+                        <li className={"key mlr-list-2"}><BlurOn className={"knowledge-icon"}/>  Git</li>
+                        <li className={"key mlr-list-2"}><BlurOn className={"knowledge-icon"}/>  Telegram Bots</li>
+                        <li className={"key mlr-list-2"}><BlurOn className={"knowledge-icon"}/>  Trading Bots</li>
                     </div>
 
                     <hr style={{width:"70%", border: "1px solid rgb(126 126 129)", margin:"20px 0", borderRadius:"5px", zIndex:4 }} />
@@ -108,11 +112,18 @@ export const BriefStoryFA = (props) =>{
                             <AnimatedLinePBar percent={90} width={"210px"} color={"#FFC107FF"} trailColor={'#181616FF'} />
                         </div>
                         <div className={"key-val-container"} style={{paddingBottom: "2px"}}>
-                            <span className={"key"}>JS</span>
-                            <span className={"val"}><AnimatedNumber start={0} end={80} duration={2000} />%</span>
+                            <span className={"key"}>GO Lang</span>
+                            <span className={"val"}><AnimatedNumber start={0} end={70} duration={2000} />%</span>
                         </div>
                         <div style={{margin:"5px 30px"}}>
-                            <AnimatedLinePBar percent={80} width={"210px"} color={"#FFC107FF"} trailColor={'#181616FF'} />
+                            <AnimatedLinePBar percent={70} width={"210px"} color={"#FFC107FF"} trailColor={'#181616FF'} />
+                        </div>
+                        <div className={"key-val-container"} style={{paddingBottom: "2px"}}>
+                            <span className={"key"}>JS</span>
+                            <span className={"val"}><AnimatedNumber start={0} end={95} duration={2000} />%</span>
+                        </div>
+                        <div style={{margin:"5px 30px"}}>
+                            <AnimatedLinePBar percent={95} width={"210px"} color={"#FFC107FF"} trailColor={'#181616FF'} />
                         </div>
                         <div className={"key-val-container"} style={{paddingBottom: "2px"}}>
                             <span className={"key"}>Python</span>
@@ -120,13 +131,6 @@ export const BriefStoryFA = (props) =>{
                         </div>
                         <div style={{margin:"5px 30px"}}>
                             <AnimatedLinePBar percent={70} width={"210px"} color={"#FFC107FF"} trailColor={'#181616FF'} />
-                        </div>
-                        <div className={"key-val-container"} style={{paddingBottom: "2px"}}>
-                            <span className={"key"}>HTML</span>
-                            <span className={"val"}><AnimatedNumber start={0} end={85} duration={2000} />%</span>
-                        </div>
-                        <div style={{margin:"5px 30px"}}>
-                            <AnimatedLinePBar percent={85} width={"210px"} color={"#FFC107FF"} trailColor={'#181616FF'} />
                         </div>
                         <div className={"key-val-container"} style={{paddingBottom: "2px"}}>
                             <span className={"key"}>CSS</span>
@@ -158,7 +162,7 @@ export const BriefStoryFA = (props) =>{
                     <a href="https://github.com/MrMohebi" target={"_blank"}>
                         <GitHub style={{ color: "#8c8c8e" }}/>
                     </a>
-                    <a href="https://t.me/MMMohebi79" target={"_blank"}>
+                    <a href="https://t.me/MMMohebi75" target={"_blank"}>
                         <Telegram style={{ color: "#8c8c8e" }}/>
                     </a>
                 </div>

@@ -33,11 +33,11 @@ const Main = (props) => {
                     <h1 className={"banner-title"}>Hi it's Mohebi, <br/>a web developer :)</h1>
                     {/*<Button variant="outlined" color="primary">explore now</Button>*/}
                 </div>
-                <div className={"statistics"}>
-                    <div><span className={"statNumbers"}><AnimatedNumber style={{color:"white"}} start={0} end={5} duration={1000}/>+  </span><span>{"\nYears Of Experience"}</span></div>
-                    <div><span className={"statNumbers"}><AnimatedNumber style={{color:"white"}} start={0} end={18} duration={3000}/>   </span><span>{"\nComplected Projects"}</span></div>
-                    <div><span className={"statNumbers"}><AnimatedNumber style={{color:"white"}} start={0} end={11} duration={3000}/>+ </span><span>{"\nHappy Customers"}</span></div>
-                </div>
+                <a href={"https://github.com/MrMohebi"} target="_blank" className={"statistics"}>
+                    <div><span className={"statNumbers"}><AnimatedNumber style={{color:"white"}} start={0} end={6} duration={1000}/>+  </span><span>{"\nYears Of Experience"}</span></div>
+                    <div><span className={"statNumbers"}><AnimatedNumber style={{color:"white"}} start={0} end={32} duration={3000}/>   </span><span>{"\nComplected Projects"}</span></div>
+                    <div><span className={"statNumbers"}><AnimatedNumber style={{color:"white"}} start={0} end={21} duration={3000}/>+ </span><span>{"\nHappy Customers"}</span></div>
+                </a>
                 <h6 style={{margin:"30px 30px 0 30px"}} className={"align-self-start p-2"} >My Services:</h6>
                 <div style={{width: "90%", padding:"10px 0 30px 0"}} className={"d-flex flex-wrap justify-content-around align-content-around"} >
                     <div className="card">
@@ -52,12 +52,12 @@ const Main = (props) => {
                             <p className="card-text">Setup and configuration of software, services or website running on the server. Specifically linux servers.</p>
                         </div>
                     </div>
-                    <div className="card">
-                        <div className="card-body">
-                            <h6 className="card-title">Web 3d</h6>
-                            <p className="card-text">Completely new experience! A world with 3d and interactive object. Bring your ideas in your websites, Introduce product by 3d models :)</p>
-                        </div>
-                    </div>
+                    {/*<div className="card">*/}
+                    {/*    <div className="card-body">*/}
+                    {/*        <h6 className="card-title">Web 3d</h6>*/}
+                    {/*        <p className="card-text">Completely new experience! A world with 3d and interactive object. Bring your ideas in your websites, Introduce product by 3d models :)</p>*/}
+                    {/*    </div>*/}
+                    {/*</div>*/}
                     <div className="card">
                         <div className="card-body">
                             <h6 className="card-title">Architecture Design</h6>
@@ -70,12 +70,12 @@ const Main = (props) => {
                             <p className="card-text">Connect your service to social medias, manage groups or notify customers. telegram bots or games and etc...</p>
                         </div>
                     </div>
-                    <div className="card">
-                        <div className="card-body">
-                            <h6 className="card-title">Cryptocurrency</h6>
-                            <p className="card-text">Program smart contracts on blockchains, On the other hand better to say distributed systems or programs</p>
-                        </div>
-                    </div>
+                    {/*<div className="card">*/}
+                    {/*    <div className="card-body">*/}
+                    {/*        <h6 className="card-title">Cryptocurrency</h6>*/}
+                    {/*        <p className="card-text">Program smart contracts on blockchains, On the other hand better to say distributed systems or programs</p>*/}
+                    {/*    </div>*/}
+                    {/*</div>*/}
                 </div>
             </div>
         </PerfectScrollbar>
